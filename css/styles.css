@@ -1,0 +1,406 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: #E9E9E9;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-title {
+    color: rgba(17, 17, 17, 1);
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: #FD9222;
+}
+
+/*? ----------------------HEADER------------------------- */
+
+.header {}
+
+.header-navigation {}
+
+.header-logo {
+    color: #111111;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+}
+
+.header-logo-simply {
+    font-style: italic;
+}
+
+.header-logo-img {}
+
+.header-menu-list {}
+
+.header-menu-item {}
+
+.header-menu-link {
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus,
+.header-menu-link:active {
+    color: #FD9222
+}
+
+.header-soc-list {}
+
+.header-soc-item {}
+
+.header-soc-link {}
+
+.header-soc-img {}
+
+/*? ----------------------HEADER------------------------- */
+
+/* ----------------------HERO------------------------- */
+
+.hero {
+    background: rgba(17, 17, 17, 0.6);
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+}
+
+.hero-buy-btn {
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.hero-made-btn {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-down-btn {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+}
+
+/* ----------------------HERO------------------------- */
+
+/*! -------------------------FEATURES-------------------- */
+
+.features {
+    background: rgba(30, 24, 35, 1);
+}
+
+.features-list {}
+
+.features-item {}
+
+.features-subtitle {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.features-item-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+/*! -------------------------FEATURES-------------------- */
+
+/** -----------------------------TASTE----------------------- */
+
+.taste {}
+
+.taste-title {}
+
+
+
+.taste-text {
+    color: rgba(17, 17, 17, 1);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.taste-list {}
+
+.taste-item {}
+
+.taste-img {}
+
+/** -----------------------------TASTE----------------------- */
+
+/*? --------------------------------MADE------------------------- */
+
+.made {}
+
+.made-title {}
+
+.made-img {}
+
+.made-subtitle {
+    color: rgba(17, 17, 17, 1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.made-list {}
+
+.made-item {}
+
+.made-item-text {
+    color: rgba(17, 17, 17, 1);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+/*? --------------------------------MADE------------------------- */
+
+/** ------------------------------PRODUCTS------------------------- */
+
+.products {}
+
+.products-title {}
+
+.products-list {}
+
+.products-item {}
+
+.products-img {}
+
+.products-subtitle {
+    color: rgba(17, 17, 17, 1);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.products-item-text {
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+}
+
+.products-item-btn {
+    font-family: inherit;
+    color: rgba(17, 17, 17, 1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: normal;
+    cursor: pointer;
+}
+
+/** ------------------------------PRODUCTS------------------------- */
+
+/*? ----------------------------SELLERS--------------------------- */
+
+.sellers {}
+
+.sellers-title {}
+
+.sellers-list {}
+
+.sellers-item {}
+
+.sellers-img {}
+
+.sellers-subtitle {
+    color: rgba(17, 17, 17, 1);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+/*? ----------------------------SELLERS--------------------------- */
+
+/* ------------------LOVED------------------ */
+
+.loved {}
+
+.loved-title {}
+
+.loved-list {}
+
+.loved-item {}
+
+.loved-img {}
+
+.loved-subtitle {
+    color: rgba(17, 17, 17, 1);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    align-items: center;
+}
+
+.loved-item-text {
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.loved-btn {
+    color: rgba(17, 17, 17, 1);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+}
+
+/* ------------------LOVED------------------ */
+
+/*! ---------------FOOTER------------------------ */
+
+.footer {
+    background: rgba(30, 24, 35, 1);
+}
+
+.footer-heading {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+}
+
+.footer-heading span {
+    color: #FD9222
+}
+
+.footer-subtitle {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.footer-soc-list {}
+
+.footer-soc-item {}
+
+.footer-soc-link {}
+
+.footer-adress {
+    font-style: normal;
+}
+
+.footer-soc-img {}
+
+.footer-adress-list {}
+
+.footer-adress-item {}
+
+.footer-adress-link {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.footer-navigation {}
+
+.footer-menu-list {}
+
+.footer-menu-item {}
+
+.footer-menu-link {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus,
+.footer-menu-link:active {
+    color: #FD9222
+}
+
+.footer-input {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    line-height: 1.89;
+    letter-spacing: -0.02em;
+}
+
+.footer-btn {
+    color: rgba(255, 255, 255, 1);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: normal;
+}
+
+/*! ---------------FOOTER------------------------ */
