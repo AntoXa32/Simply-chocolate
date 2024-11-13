@@ -15,30 +15,29 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <nav class="header-navigation">
-                <a href="/index.html" class="header-logo"><span class="header-logo-simply">SIMPLY</span> CHOCOLATE<img
+                <a href="/index.html" class="header-logo"><span class="header-logo-italic">SIMPLY</span> CHOCOLATE<img
                         src="/images/chokolate-icon.svg" alt="chokolate icon" class="header-logo-img"></a>
                 <ul class="header-menu-list">
                     <li class="header-menu-item"><a href="" class="header-menu-link">Home</a></li>
                     <li class="header-menu-item"><a href="" class="header-menu-link">How it’s made?</a></li>
                     <li class="header-menu-item"><a href="" class="header-menu-link">Chocolate is loved</a></li>
                 </ul>
-                <ul class="header-soc-list">
-                    <li class="header-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
-                            class="header-soc-link"><img src="/images/instagram.svg" alt="instagram"
-                                class="header-soc-img"></a>
-                    </li>
-                    <li class="header-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
-                            class="header-soc-link"><img src="/images/facebook.svg" alt="facebook"
-                                class="header-soc-img"></a>
-                    </li>
-                    <li class="header-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
-                            class="header-soc-link"><img src="/images/twitter.svg" alt="twitter"
-                                class="header-soc-img"></a>
-                    </li>
-                </ul>
             </nav>
+            <ul class="header-soc-list">
+                <li class="header-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
+                        class="header-soc-link"><img src="/images/instagram.svg" alt="instagram"
+                            class="header-soc-img"></a>
+                </li>
+                <li class="header-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
+                        class="header-soc-link"><img src="/images/facebook.svg" alt="facebook"
+                            class="header-soc-img"></a>
+                </li>
+                <li class="header-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
+                        class="header-soc-link"><img src="/images/twitter.svg" alt="twitter" class="header-soc-img"></a>
+                </li>
+            </ul>
         </div>
     </header>
     <main class="main">
@@ -47,9 +46,11 @@
                 <h1 class="hero-title section-title">Treat yourself or a loved one to <br />
                     our finest ingredients for a moment
                     of pure delight!</h1>
-                <button type="button" class="hero-buy-btn">Buy now</button>
-                <a href="" class="hero-made-btn">How it’s made</a>
-                <a href="" class="hero-down-btn">scroll down<img src="/images/2.svg" alt=""></a>
+                <div class="hero-buttons">
+                    <button type="button" class="hero-buy-btn">Buy now</button>
+                    <a href="" class="hero-made-btn">How it’s made</a>
+                    <a href="" class="hero-down-btn">scroll down<img src="/images/2.svg" alt=""></a>
+                </div>
             </div>
         </section>
         <section class="features">
@@ -90,17 +91,15 @@
         </section>
         <section class="taste">
             <div class="container">
-                <div>
-                    <h2 class="taste-title section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span>
-                        SENSATION</h2>
-                    <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is
-                        in the
-                        details. From
-                        the sourcing of the
-                        finest ingredients to the careful crafting of each individual piece, every step of our process
-                        adds up to one
-                        exceptional taste sensation.</p>
-                </div>
+                <h2 class="taste-title section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span>
+                    SENSATION</h2>
+                <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is
+                    in the
+                    details. From
+                    the sourcing of the
+                    finest ingredients to the careful crafting of each individual piece, every step of our process
+                    adds up to one
+                    exceptional taste sensation.</p>
                 <ul class="taste-list">
                     <li class="taste-item">
                         <img src="/images/taste/chocolate.png" alt="milk chocolate" width="214" height="160"
@@ -139,9 +138,9 @@
             <div class="container">
                 <h2 class="made-title section-title">HOW IT’S <span>MADE?</span>
                 </h2>
-                <div>
+                <div class="made-wrap">
                     <img src="/images/made-image.jpg" alt="liquid chocolate" width="600" height="400" class="made-img">
-                    <div>
+                    <div class="made-content">
                         <h3 class="made-subtitle">Try our chocolates today and discover the perfect balance of flavor
                         </h3>
                         <ul class="made-list">
@@ -176,7 +175,7 @@
         <section class="products">
             <div class="container">
                 <h2 class="products-title section-title">OUR <span>PRODUCTS</span></h2>
-                <div>
+                <div class="product-wrap">
                     <ul class="products-list">
                         <li class="products-item">
                             <img src="/images/produkts/orange.jpg" alt="Dark chocolate" width="230" height="201"
