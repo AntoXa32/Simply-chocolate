@@ -5,22 +5,45 @@ body {
     line-height: 1.5;
 }
 
-a {
+link {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul,
 ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .visually-hidden {
@@ -30,7 +53,6 @@ ol {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -51,9 +73,20 @@ ol {
     color: #FD9222;
 }
 
+.container {
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 /*? ----------------------HEADER------------------------- */
 
-.header {}
+.header {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
 
 .header-navigation {}
 
@@ -102,15 +135,25 @@ ol {
 /* ----------------------HERO------------------------- */
 
 .hero {
-    background: rgba(17, 17, 17, 0.6);
+    padding-bottom: 80px;
+}
+
+.hero-container {
+    background-color: rgba(17, 17, 17, 0.6);
+    border-radius: 30px;
+    padding: 380px 40px 40px 40px;
 }
 
 .hero-title {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    max-width: 484px;
+    text-align: left;
+    text-transform: none;
 }
 
 .hero-buy-btn {
@@ -143,6 +186,8 @@ ol {
 
 .features {
     background: rgba(30, 24, 35, 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .features-list {}
@@ -154,6 +199,7 @@ ol {
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 18px;
 }
 
 .features-item-text {
@@ -167,9 +213,14 @@ ol {
 
 /** -----------------------------TASTE----------------------- */
 
-.taste {}
+.taste {
+    padding-top: 120px;
+}
 
-.taste-title {}
+.taste-title {
+    max-width: 412px;
+    margin: 0 auto 28px;
+}
 
 
 
@@ -179,6 +230,9 @@ ol {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+    margin-bottom: 50px;
+    max-width: 486px;
+    margin: 0 auto;
 }
 
 .taste-list {}
