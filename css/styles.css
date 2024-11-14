@@ -116,8 +116,6 @@ ol {
     font-style: italic;
 }
 
-.header-logo-img {}
-
 .header-menu-list {
     display: flex;
     gap: 24px;
@@ -141,14 +139,25 @@ ol {
 
 .header-soc-list {
     display: flex;
+    align-items: center;
     gap: 14px;
 }
 
 .header-soc-item {}
 
-.header-soc-link {}
+.header-soc-link {
+    display: flex;
+    align-items: center;
+}
 
-.header-soc-img {}
+.header-soc-icon {
+    fill: transparent;
+    stroke: #111;
+}
+
+.header-soc-icon:hover {
+    stroke: #FD9222;
+}
 
 /*? ----------------------HEADER------------------------- */
 
@@ -160,6 +169,11 @@ ol {
 
 .hero-container {
     background-color: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4) 0%,
+            rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 30px;
     padding: 380px 40px 40px 40px;
 }
@@ -190,9 +204,18 @@ ol {
     line-height: normal;
     border-radius: 100px;
     background: #FD9222;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
     margin-right: 14px;
+    transition-property: background-color, border-color;
+    transition-duration: 400ms, 0.3s;
+    transition-delay: 100ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hero-buy-btn:hover {
+    background-color: transparent;
+    border-color: #fff;
 }
 
 .hero-made-btn {
@@ -234,6 +257,18 @@ ol {
 
 .features-item {
     width: calc((100% - 88px * 2) / 3);
+    position: relative;
+}
+
+.features-item:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    right: -44px;
+    height: 124px;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .features-subtitle {
@@ -350,7 +385,21 @@ ol {
     max-width: 350px;
 }
 
+.made-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.made-item::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #111111;
+    border-radius: 50%;
+    border: 1px solid #eceded;
+    flex-shrink: 0;
+}
 
 .made-list {}
 
@@ -450,13 +499,47 @@ ol {
 }
 
 .sellers-item {
-    text-align: center;
-    border: 1px solid rgba(17, 17, 17, 0.1);
+    width: calc((100% - 16px * 2) / 3);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    border-left: 1px solid rgba(17, 17, 17, 0.1);
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     background-color: #fff;
+    padding-bottom: 28px;
+    position: relative;
+}
+
+.sellers-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.sellers-item:hover .sellers-text-wrap {
+    transform: translateY(0%);
 }
 
 .sellers-img {}
+
+.sellers-text-wrap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0 39px;
+    top: 0;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 0%, rgba(8, 2, 21, 0.1) 100%);
+    backdrop-filter: blur(15px);
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
+
+.sellers-cover-text {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
 
 .sellers-subtitle {
     color: rgba(17, 17, 17, 1);
@@ -465,7 +548,8 @@ ol {
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    padding: 28px;
+    text-align: center;
+    margin-top: 28px;
 }
 
 /*? ----------------------------SELLERS--------------------------- */
@@ -497,8 +581,11 @@ ol {
 }
 
 .loved-img {
-    margin-bottom: 18px;
+
     margin: 0 auto;
+    position: relative;
+    top: -50px;
+
 }
 
 .loved-subtitle {
