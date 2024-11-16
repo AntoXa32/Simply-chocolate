@@ -207,15 +207,15 @@ ol {
     border: 1px solid transparent;
     cursor: pointer;
     margin-right: 14px;
-    transition-property: background-color, border-color;
+    transition-property: background-color, color;
     transition-duration: 400ms, 0.3s;
     transition-delay: 100ms;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .hero-buy-btn:hover {
-    background-color: transparent;
-    border-color: #fff;
+    background-color: #FCF1E0;
+    color: #FD9222
 }
 
 .hero-made-btn {
@@ -229,6 +229,11 @@ ol {
     background-color: transparent;
 }
 
+.hero-made-btn:hover {
+    border-color: #FD9222;
+    color: #FD9222;
+}
+
 .hero-down-btn {
     color: #ffffff;
     font-size: 14px;
@@ -236,6 +241,16 @@ ol {
     line-height: 1.29;
     letter-spacing: -0.03em;
     margin-left: auto;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.hero-down-svg {
+    fill: #FD9222;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 8px 0;
 }
 
 /* ----------------------HERO------------------------- */
@@ -269,6 +284,14 @@ ol {
     background-color: #fff;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.features-fluet-svg {
+    fill: #FD9222;
+    padding: 15px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+    margin-bottom: 22px;
 }
 
 .features-subtitle {
@@ -387,7 +410,7 @@ ol {
 
 .made-item {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 8px;
 }
 
@@ -621,6 +644,11 @@ ol {
     background-color: transparent;
 }
 
+.loved-btn:hover {
+    color: #ffffff;
+    background-color: #FD9222;
+}
+
 /* ------------------LOVED------------------ */
 
 /*! ---------------FOOTER------------------------ */
@@ -756,6 +784,11 @@ ol {
     margin-left: 8px;
 }
 
+.footer-btn:hover {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
 /*! ---------------FOOTER------------------------ */
 
 /* -----------------MODAL-------------------------- */
@@ -798,10 +831,10 @@ ol {
     border: none;
 }
 
-/* .modal-close-icon {
+.modal-close-icon {
     fill: transparent;
-    stroke: #9b0a0a;
-} */
+    stroke: #111111;
+}
 
 .modal-title {
     text-align: left;
@@ -895,6 +928,16 @@ ol {
     background-color: #FD9222;
     border: none;
     fill: #ffffff;
+}
+
+.modal-btn {
+    border-radius: 100px;
+    padding: 14px 40px;
+    background-color: #FD9222;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff
 }
 
 /* -----------------MODAL-------------------------- */
