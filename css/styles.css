@@ -118,7 +118,7 @@ ol {
 }
 
 .header-menu-list {
-    display: flex;
+    display: none;
     gap: 24px;
 }
 
@@ -139,7 +139,7 @@ ol {
 }
 
 .header-soc-list {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 14px;
 }
@@ -160,6 +160,91 @@ ol {
     stroke: #FD9222;
 }
 
+.menu-open-svg {
+    fill: transparent;
+    stroke: #111;
+}
+
+.menu-open-btn {
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+}
+
+/* ----------------------MOB-MENU------------------ */
+
+.mob-menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: #1E1823;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.mob-close-btn {
+    margin-left: auto;
+    display: block;
+    /* position: absolute; */
+    /* top: 20px;
+    right: 20px; */
+    background-color: transparent;
+    border: none;
+    margin-bottom: 88px;
+}
+
+.mob-close-icon {
+    fill: transparent;
+    stroke: #ffffff;
+}
+
+.mob-menu-list {
+    padding-left: 28px;
+    margin-bottom: 32px;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mob-menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-link:active {
+    color: #FD9222
+}
+
+.mob-soc-list {
+    display: flex;
+    gap: 12px;
+}
+
+.mob-soc-item {}
+
+.mob-soc-link {}
+
+.mob-soc-icon {
+    fill: transparent;
+    stroke: #ffffff;
+}
+
+/* ----------------------MOB-MENU------------------ */
 /*? ----------------------HEADER------------------------- */
 
 /* ----------------------HERO------------------------- */
@@ -171,19 +256,28 @@ ol {
 .hero-container {
     background-color: rgba(17, 17, 17, 0.6);
     background-image: linear-gradient(rgba(17, 17, 17, 0.4) 0%,
-            rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg.jpg);
+            rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 30px;
-    padding: 380px 40px 40px 40px;
+    padding: 395px 20px 20px 20px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero-container {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4) 0%,
+                rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg-mob-2x.jpg);
+    }
 }
 
 .hero-title {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 1.21;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     margin-bottom: 32px;
     max-width: 484px;
@@ -194,10 +288,11 @@ ol {
 .hero-buttons {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero-buy-btn {
-    padding: 14px 40px;
+    padding: 12px 28px;
     font-family: inherit;
     color: #ffffff;
     font-size: 14px;
@@ -220,7 +315,7 @@ ol {
 }
 
 .hero-made-btn {
-    padding: 14px 40px;
+    padding: 12px 28px;
     color: #ffffff;
     font-size: 14px;
     font-weight: 600;
@@ -241,15 +336,16 @@ ol {
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
-    margin-left: auto;
+    margin-top: 32px;
     display: flex;
-    gap: 14px;
+    /* gap: 14px; */
+    gap: 12px;
     align-items: center;
 }
 
 .hero-down-svg {
     fill: #FD9222;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 100%;
     padding: 8px 0;
 }
@@ -390,6 +486,7 @@ ol {
 
 .made-wrap {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -957,6 +1054,38 @@ ol {
         line-height: 1.17;
     }
 
+    /* ----------------------HERO------------------------- */
+
+    .hero-container {
+        padding: 670px 40px 40px 40px;
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4) 0%,
+                rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg-tab.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero-container {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.4) 0%,
+                    rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg-tab-2x.jpg);
+        }
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-buy-btn,
+    .hero-made-btn {
+        padding: 14px 40px;
+    }
+
+    .hero-down-btn {
+        margin-left: auto;
+        margin-top: unset;
+    }
+
+    /* ----------------------HERO------------------------- */
     /** ------------------------------PRODUCTS------------------------- */
 
     .products {
@@ -1024,6 +1153,24 @@ ol {
         max-width: 1166px;
     }
 
+    /* ----------------------HERO------------------------- */
+
+    .hero-container {
+        padding: 380px 40px 40px 40px;
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4) 0%,
+                rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero-container {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.4) 0%,
+                    rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-bg-2x.jpg);
+        }
+    }
+
+    /* ----------------------HERO------------------------- */
     /** ------------------------------PRODUCTS------------------------- */
 
     .products {
@@ -1064,6 +1211,10 @@ ol {
     .loved-item {
         width: calc((100% - 56px) / 3);
         padding: 56px 24px 24px 24px;
+    }
+
+    .made-wrap {
+        flex-direction: row;
     }
 
     /* ------------------LOVED------------------ */
