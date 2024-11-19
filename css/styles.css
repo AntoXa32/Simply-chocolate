@@ -25,6 +25,7 @@ a {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 p,
@@ -63,8 +64,8 @@ ol {
     color: #111111;
     text-align: center;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
 }
@@ -75,7 +76,7 @@ ol {
 
 .container {
     width: 100%;
-    max-width: 1166px;
+    max-width: 365px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -443,12 +444,11 @@ ol {
 /** ------------------------------PRODUCTS------------------------- */
 
 .products {
-    margin-top: 120px;
-
+    margin-top: 80px;
 }
 
 .products-title {
-    margin-bottom: 50px;
+    margin-bottom: 22px;
 }
 
 .product-wrap {}
@@ -456,11 +456,11 @@ ol {
 .products-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 18px;
+    gap: 22px;
 }
 
 .products-item {
-    width: calc((100% - 18px * 3) / 4);
+    width: 100%;
     padding: 32px 20px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
@@ -470,6 +470,7 @@ ol {
 
 .products-img {
     margin-bottom: 8px;
+    margin: 0 auto;
 }
 
 .products-subtitle {
@@ -511,20 +512,23 @@ ol {
 /*? ----------------------------SELLERS--------------------------- */
 
 .sellers {
-    padding-top: 120px;
+    /* padding-top: 120px; */
+    padding-top: 80px;
 }
 
 .sellers-title {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .sellers-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
 }
 
 .sellers-item {
-    width: calc((100% - 16px * 2) / 3);
+    width: 100%;
     border-bottom: 1px solid rgba(17, 17, 17, 0.1);
     border-left: 1px solid rgba(17, 17, 17, 0.1);
     border-right: 1px solid rgba(17, 17, 17, 0.1);
@@ -582,28 +586,29 @@ ol {
 /* ------------------LOVED------------------ */
 
 .loved {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .loved-title {
-    margin-bottom: 90px;
+    margin-bottom: 74px;
 }
 
 .loved-list {
     display: flex;
-    gap: 28px;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 58px;
+    margin-bottom: 32px;
 }
 
 .loved-item {
+    padding: 56px 18px 18px 18px;
     background-color: #fff;
     box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
     text-align: center;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
-    width: calc((100% - 56px) / 3);
-    padding: 56px 24px 24px 24px;
+    width: 100%;
     position: relative;
 }
 
@@ -941,3 +946,125 @@ ol {
 }
 
 /* -----------------MODAL-------------------------- */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 734px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    /** ------------------------------PRODUCTS------------------------- */
+
+    .products {
+        padding-top: 100px;
+    }
+
+    .products-title {
+        margin-bottom: 50px;
+    }
+
+    .products-list {
+        gap: 32px;
+    }
+
+    .products-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    /** ------------------------------PRODUCTS------------------------- */
+
+    /*? ----------------------------SELLERS--------------------------- */
+
+    .sellers {
+        padding-top: 100px;
+    }
+
+    .sellers-title {
+        margin-bottom: 50px;
+    }
+
+    .sellers-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    /*? ----------------------------SELLERS--------------------------- */
+
+    /* ------------------LOVED------------------ */
+
+    .loved {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .loved-title {
+        margin-bottom: 90px;
+    }
+
+    .loved-list {
+        gap: 58px 16px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .loved-item {
+        width: calc((100% - 16px) / 2);
+        padding: 56px 16px 16px 16px;
+    }
+
+
+    /* ------------------LOVED------------------ */
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1166px;
+    }
+
+    /** ------------------------------PRODUCTS------------------------- */
+
+    .products {
+        margin-top: 120px;
+    }
+
+    .products-list {
+        gap: 24px 18px;
+    }
+
+    .products-item {
+        width: calc((100% - 54px) / 4);
+    }
+
+    /** ------------------------------PRODUCTS------------------------- */
+
+    /*? ----------------------------SELLERS--------------------------- */
+    .sellers {
+        padding-top: 120px;
+    }
+
+    .sellers-item {
+        width: calc((100% - 32px) / 3);
+    }
+
+    /*? ----------------------------SELLERS--------------------------- */
+    /* ------------------LOVED------------------ */
+
+    .loved {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .loved-list {
+        gap: 28px;
+    }
+
+    .loved-item {
+        width: calc((100% - 56px) / 3);
+        padding: 56px 24px 24px 24px;
+    }
+
+    /* ------------------LOVED------------------ */
+}
