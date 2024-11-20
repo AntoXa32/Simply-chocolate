@@ -85,8 +85,8 @@ ol {
 /*? ----------------------HEADER------------------------- */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 32px;
+    padding-top: 20px;
+    padding-bottom: 14px;
 }
 
 .header-container {
@@ -104,9 +104,9 @@ ol {
 
 .header-logo {
     color: #111111;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 1.29;
     font-weight: 700;
-    line-height: 1.11;
     letter-spacing: -0.03em;
     display: flex;
     align-items: center;
@@ -115,6 +115,13 @@ ol {
 
 .header-logo-italic {
     font-style: italic;
+}
+
+.header-logo-svg {
+    fill: transparent;
+    stroke: #FD9222;
+    width: 21px;
+    height: 21px;
 }
 
 .header-menu-list {
@@ -194,9 +201,6 @@ ol {
 .mob-close-btn {
     margin-left: auto;
     display: block;
-    /* position: absolute; */
-    /* top: 20px;
-    right: 20px; */
     background-color: transparent;
     border: none;
     margin-bottom: 88px;
@@ -280,7 +284,6 @@ ol {
     line-height: 1.2;
     letter-spacing: -0.03em;
     margin-bottom: 32px;
-    max-width: 484px;
     text-align: left;
     text-transform: none;
 }
@@ -302,7 +305,7 @@ ol {
     background: #FD9222;
     border: 1px solid transparent;
     cursor: pointer;
-    margin-right: 14px;
+    margin-right: 13px;
     transition-property: background-color, color;
     transition-duration: 400ms, 0.3s;
     transition-delay: 100ms;
@@ -332,15 +335,18 @@ ol {
 
 .hero-down-btn {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.29;
+    line-height: 1.17;
     letter-spacing: -0.03em;
     margin-top: 32px;
     display: flex;
-    /* gap: 14px; */
     gap: 12px;
     align-items: center;
+}
+
+.hero-down-btn:hover {
+    color: #FD9222;
 }
 
 .hero-down-svg {
@@ -348,6 +354,13 @@ ol {
     background-color: #ffffff;
     border-radius: 100%;
     padding: 8px 0;
+    width: 28px;
+    height: 28px;
+}
+
+.hero-down-svg:hover {
+    fill: #fff;
+    background-color: #FD9222;
 }
 
 /* ----------------------HERO------------------------- */
@@ -356,24 +369,23 @@ ol {
 
 .features {
     background: rgba(30, 24, 35, 1);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .features-list {
     display: flex;
-    gap: 88px;
-    padding-left: 18px;
-    padding-right: 18px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .features-item {
-    width: calc((100% - 88px * 2) / 3);
     position: relative;
+    width: 308px;
 }
 
 .features-item:not(:last-child)::after {
-    content: '';
+
     width: 1px;
     right: -44px;
     height: 124px;
@@ -411,37 +423,26 @@ ol {
 /** -----------------------------TASTE----------------------- */
 
 .taste {
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .taste-title {
-    max-width: 412px;
+    max-width: 283px;
     margin: 0 auto 28px;
-}
-
-.taste-text {
-    color: rgba(17, 17, 17, 1);
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    margin-bottom: 50px;
-    max-width: 486px;
-    margin: 0 auto;
 }
 
 .taste-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 32px;
-    margin-top: 50px;
+    /* justify-content: center; */
+    gap: 20px;
+    margin-top: 32px;
 }
 
 .taste-item {
     border-radius: 15px;
     border: 1px solid #FD9222;
-    width: calc((100% - 32px * 3) / 4);
-    padding: 28px 23px;
+    padding: 32px 50px 28px 50px;
 }
 
 .taste-item:nth-child(1),
@@ -459,7 +460,7 @@ ol {
 
 .taste-img {
     margin: 0 auto;
-    margin-bottom: 36px;
+    margin-bottom: 16px;
 }
 
 .taste-subtitle {
@@ -468,6 +469,8 @@ ol {
     line-height: 1.29;
     letter-spacing: -0.02em;
     padding-left: 5px;
+    position: relative;
+    left: -22px;
 }
 
 
@@ -477,11 +480,11 @@ ol {
 /*? --------------------------------MADE------------------------- */
 
 .made {
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .made-title {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .made-wrap {
@@ -494,7 +497,7 @@ ol {
 
 .made-content {
     background-color: #ffffff;
-    padding: 32px;
+    padding: 20px 14px;
 }
 
 .made-subtitle {
@@ -516,7 +519,7 @@ ol {
     content: '';
     width: 8px;
     height: 8px;
-    background-color: #111111;
+    background-color: #4c4c4c;
     border-radius: 50%;
     border: 1px solid #eceded;
     flex-shrink: 0;
@@ -533,7 +536,6 @@ ol {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-
 }
 
 /*? --------------------------------MADE------------------------- */
@@ -541,7 +543,7 @@ ol {
 /** ------------------------------PRODUCTS------------------------- */
 
 .products {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .products-title {
@@ -1054,6 +1056,32 @@ ol {
         line-height: 1.17;
     }
 
+    /*? ------------------------HEADER-------------------------- */
+
+    .header {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+    .header-container {
+        gap: 48px;
+    }
+
+    .header-menu-list {
+        display: flex;
+    }
+
+    .header-soc-list {
+        display: flex;
+    }
+
+    .menu-open-btn {
+        display: none;
+    }
+
+
+    /*? ------------------------HEADER-------------------------- */
+
     /* ----------------------HERO------------------------- */
 
     .hero-container {
@@ -1073,6 +1101,7 @@ ol {
 
     .hero-title {
         font-size: 28px;
+        max-width: 484px;
     }
 
     .hero-buy-btn,
@@ -1083,9 +1112,81 @@ ol {
     .hero-down-btn {
         margin-left: auto;
         margin-top: unset;
+        gap: 14px;
+        line-height: 1.29;
+        font-size: 14px;
+    }
+
+    .hero-down-svg {
+        width: 38px;
+        height: 38px;
     }
 
     /* ----------------------HERO------------------------- */
+
+    /* ?-------------------------FEATURES----------------------- */
+
+    .features {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .features-list {
+        gap: 44px 88px;
+    }
+
+    .features-item {
+        width: calc((100% - 88px) / 2);
+    }
+
+    /* ?-------------------------FEATURES----------------------- */
+
+    /**! -----------------------------TASTE----------------------- */
+
+    .taste {
+        padding-top: 100px;
+    }
+
+    .taste-title {
+        max-width: 412px;
+    }
+
+    .taste-list {
+        margin-top: 50px;
+        gap: 32px;
+    }
+
+    .taste-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    /**! -----------------------------TASTE----------------------- */
+
+    /*? ------------------------------MADE----------------------- */
+
+    .made {
+        padding-top: 100px;
+    }
+
+    .made-title {
+        margin-bottom: 50px;
+    }
+
+    .made-content {
+        padding: 32px;
+        max-width: 614px;
+        margin: 0 auto;
+    }
+
+    .made-img {
+        margin: 0 auto;
+    }
+
+    .made-item-text {
+        max-width: 464px;
+    }
+
+    /*? ------------------------------MADE----------------------- */
     /** ------------------------------PRODUCTS------------------------- */
 
     .products {
@@ -1153,6 +1254,16 @@ ol {
         max-width: 1166px;
     }
 
+    .header-logo {
+        font-size: 18px;
+        line-height: 1.11;
+    }
+
+    .header-logo-svg {
+        width: 24px;
+        height: 24px;
+    }
+
     /* ----------------------HERO------------------------- */
 
     .hero-container {
@@ -1171,10 +1282,69 @@ ol {
     }
 
     /* ----------------------HERO------------------------- */
+
+    /* ?-------------------------FEATURES----------------------- */
+
+    .features-list {
+        gap: 88px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .features-item {
+        width: calc((100% - 88px * 2) / 3);
+    }
+
+    .features-item:not(:last-child)::after {
+        content: '';
+    }
+
+    /* ?-------------------------FEATURES----------------------- */
+    /**! -----------------------------TASTE----------------------- */
+
+    .taste {
+        padding-top: 120px;
+    }
+
+    .taste-list {
+        gap: 24px 32px;
+    }
+
+    .taste-item {
+        width: calc((100% - 32px * 3) / 4);
+        padding: 28px 23px;
+    }
+
+    .taste-img {
+        margin-bottom: 36px;
+    }
+
+    .taste-subtitle {
+        position: static;
+    }
+
+    /**! -----------------------------TASTE----------------------- */
+
+    /*? ------------------------------MADE----------------------- */
+
+    .made {
+        padding-top: 120px;
+    }
+
+    .made-wrap {
+        flex-direction: row;
+    }
+
+    .made-content {
+        margin-top: 0;
+    }
+
+    /*? ------------------------------MADE----------------------- */
+
     /** ------------------------------PRODUCTS------------------------- */
 
     .products {
-        margin-top: 120px;
+        padding-top: 120px;
     }
 
     .products-list {
@@ -1213,9 +1383,7 @@ ol {
         padding: 56px 24px 24px 24px;
     }
 
-    .made-wrap {
-        flex-direction: row;
-    }
+
 
     /* ------------------LOVED------------------ */
 }
