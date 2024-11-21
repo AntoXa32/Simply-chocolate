@@ -22,9 +22,9 @@
                         <use href="./images/icons.svg#icon-chocolate"></use>
                     </svg></a>
                 <ul class="header-menu-list">
-                    <li class="header-menu-item"><a href="" class="header-menu-link">Home</a></li>
-                    <li class="header-menu-item"><a href="" class="header-menu-link">How it’s made?</a></li>
-                    <li class="header-menu-item"><a href="" class="header-menu-link">Chocolate is loved</a></li>
+                    <li class="header-menu-item"><a href="./index.html" class="header-menu-link">Home</a></li>
+                    <li class="header-menu-item"><a href="#made" class="header-menu-link">How it’s made?</a></li>
+                    <li class="header-menu-item"><a href="#loved" class="header-menu-link">Chocolate is loved</a></li>
                 </ul>
             </nav>
             <ul class="header-soc-list">
@@ -57,9 +57,9 @@
                 </button>
                 <nav>
                     <ul class="mob-menu-list">
-                        <li class="mob-menu-item"><a href="" class="mob-menu-link">Home</a></li>
-                        <li class="mob-menu-item"><a href="" class="mob-menu-link">How it’s made?</a></li>
-                        <li class="mob-menu-item"><a href="" class="mob-menu-link">Chocolate is loved</a></li>
+                        <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link">Home</a></li>
+                        <li class="mob-menu-item"><a href="#made" class="mob-menu-link">How it’s made?</a></li>
+                        <li class="mob-menu-item"><a href="#loved" class="mob-menu-link">Chocolate is loved</a></li>
                     </ul>
                 </nav>
             </div>
@@ -91,8 +91,8 @@
                         of pure delight!</h1>
                     <div class="hero-buttons">
                         <button type="button" class="hero-buy-btn">Buy now</button>
-                        <a href="" class="hero-made-btn">How it’s made</a>
-                        <a href="" class="hero-down-btn">scroll down<svg class="hero-down-svg">
+                        <a href="#made" class="hero-made-btn">How it’s made</a>
+                        <a href="#footer" class="hero-down-btn">scroll down<svg class="hero-down-svg">
                                 <use href="./images/icons.svg#icon-angle"></use>
                             </svg></a>
                     </div>
@@ -213,18 +213,20 @@
                         <h3 class="taste-subtitle">RASPBERRY</h3>
                     </li>
                     <li class="taste-item">
-                        <source srcset="./images/taste/coconut.png 1x, ./images/taste/coconut-2x.png 2x"
-                            media="(min-width: 1200px)" />
-                        <source srcset="./images/taste/coconut-mob.png 1x, ./images/taste/coconut-mob-2x.png 2x"
-                            media="(max-width: 1199px)" />
-                        <img src="/images/taste/coconut.png" alt="coconut" width="236" height="176" class="taste-img">
+                        <picture>
+                            <source srcset="./images/taste/coconut.png 1x, ./images/taste/coconut-2x.png 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/taste/coconut-mob.png 1x, ./images/taste/coconut-mob-2x.png 2x"
+                                media="(max-width: 1199px)" />
+                            <img src="/images/taste/coconut.png" alt="coconut" width="236" height="176"
+                                class="taste-img">
                         </picture>
                         <h3 class="taste-subtitle">COCONUT OIL</h3>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="made">
+        <section class="made" id="made">
             <div class="container">
                 <h2 class="made-title section-title">HOW IT’S <span>MADE?</span>
                 </h2>
@@ -275,62 +277,70 @@
                     </div>
                 </div>
         </section>
-        <section class="products">
+        <section class="products" id="products">
             <div class="container">
                 <h2 class="products-title section-title">OUR <span>PRODUCTS</span></h2>
                 <div class="product-wrap">
                     <ul class="products-list">
                         <li class="products-item">
-                            <img src="/images/produkts/orange.jpg" alt="Dark chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/orange.jpg 1x, ./images/produkts/orange-2x.jpg 2x"
+                                src="/images/produkts/orange.jpg" alt="Dark chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">orange</h3>
                             <p class="products-item-text">Dark chocolate</p>
                             <button type="button" class="products-item-btn">45 UAH</button>
                         </li>
                         <li class="products-item">
-                            <img src="/images/produkts/apple.jpg" alt="Milk chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/apple.jpg 1x, ./images/produkts/apple-2x.jpg 2x"
+                                src="/images/produkts/apple.jpg" alt="Milk chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">APPLE&CRANBERRY</h3>
                             <p class="products-item-text">Milk chocolate</p>
                             <button type="button" class="products-item-btn">50 UAH</button>
                         </li>
                         <li class="products-item">
-                            <img src="/images/produkts/lime.jpg" alt="Dark chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/lime.jpg 1x, ./images/produkts/lime-2x.jpg 2x"
+                                src="/images/produkts/lime.jpg" alt="Dark chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">lime&sea salt</h3>
                             <p class="products-item-text">Dark chocolate</p>
                             <button type="button" class="products-item-btn">66 UAH</button>
                         </li>
                         <li class="products-item">
-                            <img src="/images/produkts/pineapple.jpg" alt="Dark chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/pineapple.jpg 1x, ./images/produkts/pineapple-2x.jpg 2x"
+                                src="/images/produkts/pineapple.jpg" alt="Dark chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">pineapple</h3>
                             <p class="products-item-text">Dark chocolate</p>
                             <button type="button" class="products-item-btn">54 UAH</button>
                         </li>
                         <li class="products-item">
-                            <img src="/images/produkts/classic.jpg" alt="Milk chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/classic.jpg 1x, ./images/produkts/classic-2x.jpg 2x"
+                                src="/images/produkts/classic.jpg" alt="Milk chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">Classic</h3>
                             <p class="products-item-text">Milk chocolate</p>
                             <button type="button" class="products-item-btn">45 UAH</button>
                         </li>
                         <li class="products-item">
-                            <img src="/images/produkts/honey.jpg" alt="Milk chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/honey.jpg 1x, ./images/produkts/honey-2x.jpg 2x"
+                                src="/images/produkts/honey.jpg" alt="Milk chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">honey</h3>
                             <p class="products-item-text">Milk chocolate</p>
                             <button type="button" class="products-item-btn">50 UAH</button>
                         </li>
                         <li class="products-item">
-                            <img src="/images/produkts/fruits.jpg" alt="Dark chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/fruits.jpg 1x, ./images/produkts/fruits-2x.jpg 2x"
+                                src="/images/produkts/fruits.jpg" alt="Dark chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">Roasted fruits</h3>
                             <p class="products-item-text">Dark chocolate</p>
                             <button type="button" class="products-item-btn">66 UAH</button>
                         </li>
                         <li class="products-item">
-                            <img src="/images/produkts/classik white.jpg" alt="White chocolate" width="230" height="201"
+                            <img srcset="./images/produkts/classik-white.jpg 1x, ./images/produkts/classik-white-2x.jpg 2x"
+                                src="/images/produkts/classik-white.jpg" alt="White chocolate" width="230" height="201"
                                 class="products-img">
                             <h3 class="products-subtitle">Classic</h3>
                             <p class="products-item-text">White chocolate</p>
@@ -341,15 +351,26 @@
             </div>
 
         </section>
-        <section class="sellers">
+        <section class="sellers" id="sellers">
             <div class="container">
                 <h2 class="sellers-title section-title"><span>TOP</span> SELLERS</h2>
                 <div>
                     <ul class="sellers-list">
                         <li class="sellers-item">
                             <div class="sellers-content">
-                                <img src="/images/sellers/nuts.jpg" alt="CHOCOLATE WITH NUTS" width="368" height="464"
-                                    class="sellers-img">
+                                <picture>
+                                    <source srcset="./images/sellers/nuts.jpg 1x, ./images/sellers/nuts-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/sellers/nuts-tab.jpg 1x, ./images/sellers/nuts-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/sellers/nuts-mob.jpg 1x, ./images/sellers/nuts-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="/images/sellers/nuts.jpg" alt="CHOCOLATE WITH NUTS" width="368"
+                                        height="464" class="sellers-img">
+                                </picture>
+
                                 <div class="sellers-text-wrap">
                                     <p class="sellers-cover-text">Chocolate with fruit is an unbeatable combination of
                                         two
@@ -366,8 +387,16 @@
                         </li>
                         <li class="sellers-item">
                             <div class="sellers-content">
-                                <img src="/images/sellers/fruits.jpg" alt="CHOCOLATE WITH FRUITS" width="368"
-                                    height="464" class="sellers-img">
+                                <picture>
+                                    <source srcset="./images/sellers/fruits.jpg 1x, ./images/sellers/fruits-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/sellers/fruits-tab.jpg 1x, ./images/sellers/fruits-tab-2x.jpg 2x"
+                                        media="(max-width: 1199px)" />
+                                    <img src="/images/sellers/fruits.jpg" alt="CHOCOLATE WITH FRUITS" width="368"
+                                        height="464" class="sellers-img">
+                                </picture>
+
                                 <div class="sellers-text-wrap">
                                     <p class="sellers-cover-text">Chocolate with fruit is an unbeatable combination of
                                         two
@@ -384,8 +413,14 @@
                         </li>
                         <li class="sellers-item">
                             <div class="sellers-content">
-                                <img src="/images/sellers/dark.jpg" alt="DARK CHOCOLATE" width="368" height="464"
-                                    class="sellers-img">
+                                <picture>
+                                    <source srcset="./images/sellers/dark.jpg 1x, ./images/sellers/dark-2x.jpg 2x"
+                                        media="(max-width: 1199px)" />
+
+                                    <img src="/images/sellers/dark.jpg" alt="DARK CHOCOLATE" width="368" height="464"
+                                        class="sellers-img">
+                                </picture>
+
                                 <div class="sellers-text-wrap">
                                     <p class="sellers-cover-text">Chocolate with fruit is an unbeatable combination of
                                         two
@@ -404,7 +439,7 @@
                 </div>
             </div>
         </section>
-        <section class="loved">
+        <section class="loved" id="loved">
             <div class="container">
                 <h2 class="loved-title section-title"><span>CHOCOLATE</span> IS LOVED</h2>
                 <ul class="loved-list">
@@ -439,49 +474,55 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-top">
                 <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
-                <div class="footer-soc">
-                    <p class="footer-subtitle">Social networks</p>
-                    <ul class="footer-soc-list">
-                        <li class="footer-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
-                                class="footer-soc-link"><svg width="24" height="24" class="footer-soc-icon">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg></a>
-                        </li>
-                        <li class="footer-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
-                                class="footer-soc-link"><svg width="24" height="24" class="footer-soc-icon">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg></a>
-                        </li>
-                        <li class="footer-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
-                                class="footer-soc-link"><svg width="24" height="24" class="footer-soc-icon">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-contacts">
-                    <p class="footer-subtitle">Contact us</p>
-                    <address class="footer-adress">
-                        <ul class="footer-adress-list">
-                            <li class="footer-adress-item"><a href="tel:+380684439426" class="footer-adress-link">+380
-                                    (68)
-                                    443-94-26</a></li>
-                            <li class="footer-adress-item"><a href="mailto:simplychoc@gmail.com"
-                                    class="footer-adress-link">simplychoc@gmail.com</a></li>
+                <div class="footer-soc-contacts">
+                    <div class="footer-soc">
+                        <p class="footer-subtitle">Social networks</p>
+                        <ul class="footer-soc-list">
+                            <li class="footer-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
+                                    class="footer-soc-link"><svg width="24" height="24" class="footer-soc-icon">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg></a>
+                            </li>
+                            <li class="footer-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
+                                    class="footer-soc-link"><svg width="24" height="24" class="footer-soc-icon">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg></a>
+                            </li>
+                            <li class="footer-soc-item"><a href="" target="_blank" rel="noopener noreferrer"
+                                    class="footer-soc-link"><svg width="24" height="24" class="footer-soc-icon">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg></a>
+                            </li>
                         </ul>
-                    </address>
+                    </div>
+                    <div class="footer-contacts">
+                        <p class="footer-subtitle">Contact us</p>
+                        <address class="footer-adress">
+                            <ul class="footer-adress-list">
+                                <li class="footer-adress-item"><a href="tel:+380684439426"
+                                        class="footer-adress-link">+380
+                                        (68)
+                                        443-94-26</a></li>
+                                <li class="footer-adress-item"><a href="mailto:simplychoc@gmail.com"
+                                        class="footer-adress-link">simplychoc@gmail.com</a></li>
+                            </ul>
+                        </address>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <nav class="footer-navigation">
                     <ul class="footer-menu-list">
-                        <li class="footer-menu-item"><a href="" class="footer-menu-link">Home</a></li>
-                        <li class="footer-menu-item"><a href="" class="footer-menu-link">How it’s made?</a></li>
-                        <li class="footer-menu-item"><a href="" class="footer-menu-link">Chocolate is loved</a></li>
+                        <li class="footer-menu-item"><a href="./index.html" class="footer-menu-link">Home</a></li>
+                        <li class="footer-menu-item"><a href="#made" class="footer-menu-link">How it’s made?</a></li>
+                        <li class="footer-menu-item"><a href="#products" class="footer-menu-link">Our products</a></li>
+                        <li class="footer-menu-item"><a href="#sellers" class="footer-menu-link">Top sellers</a></li>
+                        <li class="footer-menu-item"><a href="#loved" class="footer-menu-link">Chocolate is loved</a>
+                        </li>
                     </ul>
                 </nav>
                 <div>
