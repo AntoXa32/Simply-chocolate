@@ -129,8 +129,6 @@ ol {
     gap: 24px;
 }
 
-.header-menu-item {}
-
 .header-menu-link {
     color: #111111;
     font-size: 14px;
@@ -150,8 +148,6 @@ ol {
     align-items: center;
     gap: 14px;
 }
-
-.header-soc-item {}
 
 .header-soc-link {
     display: flex;
@@ -238,10 +234,6 @@ ol {
     display: flex;
     gap: 12px;
 }
-
-.mob-soc-item {}
-
-.mob-soc-link {}
 
 .mob-soc-icon {
     fill: transparent;
@@ -493,8 +485,6 @@ ol {
     gap: 20px;
 }
 
-.made-img {}
-
 .made-content {
     background-color: #ffffff;
     padding: 20px 14px;
@@ -525,8 +515,6 @@ ol {
     flex-shrink: 0;
 }
 
-.made-list {}
-
 .made-item+.made-item {
     margin-top: 24px;
 }
@@ -549,8 +537,6 @@ ol {
 .products-title {
     margin-bottom: 22px;
 }
-
-.product-wrap {}
 
 .products-list {
     display: flex;
@@ -650,8 +636,6 @@ ol {
 .sellers-item:hover .sellers-text-wrap {
     transform: translateY(0%);
 }
-
-.sellers-img {}
 
 .sellers-text-wrap {
     position: absolute;
@@ -813,10 +797,6 @@ ol {
     gap: 14px;
 }
 
-.footer-soc-item {}
-
-.footer-soc-link {}
-
 .footer-soc-icon {
     fill: transparent;
     stroke: #ffffff;
@@ -825,10 +805,6 @@ ol {
 .footer-adress {
     font-style: normal;
 }
-
-.footer-soc-img {}
-
-.footer-adress-list {}
 
 .footer-adress-item+.footer-adress-item {
     margin-top: 4px;
@@ -859,8 +835,6 @@ ol {
     justify-content: start;
     gap: 18px;
 }
-
-.footer-menu-item {}
 
 .footer-menu-link {
     color: #ffffff;
