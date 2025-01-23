@@ -49,5 +49,8 @@
     <symbol id="icon-Icon-menu" viewBox="0 0 48 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3 16h42M3 2h42M3 30h42"></path>
     </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 48 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3.428 16h41.144M44.572 16l-10.292-10.284M44.572 16l-10.292 10.284"></path>
+</symbol>
   </defs>
 </svg>

@@ -379,7 +379,6 @@ ol {
 }
 
 .features-item:not(:last-child)::after {
-
     width: 1px;
     right: -44px;
     height: 124px;
@@ -442,7 +441,8 @@ ol {
 .taste-item:nth-child(1),
 .taste-item:nth-child(5) {
     background-color: #FD9222;
-    color: #fff
+    color: #fff;
+
 }
 
 .taste-item:nth-child(3),
@@ -467,7 +467,27 @@ ol {
     left: -22px;
 }
 
+.taste-button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 232px;
+    top: -14px;
+}
 
+.taste-button-svg {
+    fill: transparent;
+    stroke: white;
+    background-color: transparent;
+    border-radius: 365px;
+    border: 1px solid white;
+    padding: 4px 4px;
+}
+
+.taste-item-white .taste-button-svg {
+    stroke: #FD9222;
+    border-color: #FD9222;
+}
 
 /** -----------------------------TASTE----------------------- */
 
@@ -1386,6 +1406,14 @@ ol {
 
     .taste-subtitle {
         position: static;
+    }
+
+    .taste-button {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        left: 190px;
+        top: -14px;
     }
 
     /**! -----------------------------TASTE----------------------- */

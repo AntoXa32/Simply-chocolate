@@ -9,7 +9,10 @@ const elements = {
   loginForm: document.querySelector(".modal-form"),
   checkBoxEl: document.querySelector("#policy"),
   submitBtnEl: document.querySelector(".modal-btn"),
+  testListEl: document.querySelectorAll(".taste-button"),
 };
+
+console.log(elements.testListEl);
 
 // Відкриття/закриття модалки
 elements.lovedBtnEl.addEventListener("click", () => {
