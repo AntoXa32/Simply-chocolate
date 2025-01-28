@@ -9,10 +9,7 @@ const elements = {
   loginForm: document.querySelector(".modal-form"),
   checkBoxEl: document.querySelector("#policy"),
   submitBtnEl: document.querySelector(".modal-btn"),
-  testListEl: document.querySelectorAll(".taste-button"),
 };
-
-console.log(elements.testListEl);
 
 // Відкриття/закриття модалки
 elements.lovedBtnEl.addEventListener("click", () => {
@@ -62,4 +59,18 @@ elements.loginForm.addEventListener("submit", function (event) {
 
   this.reset();
   elements.submitBtnEl.disabled = true;
+});
+
+const cards = document.querySelectorAll(".taste-item");
+
+cards.forEach((card) => {
+  // Знаходимо кнопки всередині картки
+  const flipBtn = card.querySelectorAll(".taste-button");
+
+  flipBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Перемикаємо клас для перевертання
+      card.classList.toggle("flipped");
+    });
+  });
 });
