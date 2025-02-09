@@ -62,15 +62,24 @@ elements.loginForm.addEventListener("submit", function (event) {
 });
 
 const cards = document.querySelectorAll(".taste-item");
+const cardFrontTestEl = document.querySelector(".card-front");
+const cardBackTestEl = document.querySelector(".card-back");
+const cardBackButtonEl = document.querySelector(".taste-button-svg");
 
+console.log(cardFrontTestEl);
 cards.forEach((card) => {
   // Знаходимо кнопки всередині картки
   const flipBtn = card.querySelectorAll(".taste-button");
 
   flipBtn.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      cardFrontTestEl.classList.toggle("visually-hidden");
+      cardBackTestEl.classList.toggle("visually-hidden");
+      cardBackButtonEl.classList.toggle("taste-back-svg");
+
       // Перемикаємо клас для перевертання
-      card.classList.toggle("flipped");
+      // card.classList.toggle("flipped");
     });
   });
 });

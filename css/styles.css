@@ -434,7 +434,10 @@ ol {
 .taste-item {
     border-radius: 15px;
     border: 1px solid #FD9222;
-    padding: 32px 50px 28px 50px;
+    perspective: 1000px;
+    /* Додає 3D ефект */
+    max-height: 270px;
+    position: relative;
 }
 
 .taste-item:nth-child(1),
@@ -469,9 +472,10 @@ ol {
 .taste-button {
     background-color: transparent;
     border: none;
-    position: relative;
-    left: 232px;
-    top: -14px;
+    position: absolute;
+    left: 280px;
+    top: 15px;
+    z-index: 10000;
 }
 
 .taste-button-svg {
@@ -483,42 +487,64 @@ ol {
     padding: 4px 4px;
 }
 
+.taste-back-svg {
+    stroke: orange;
+    border: 1px solid orange;
+}
+
 .taste-item-white .taste-button-svg {
     stroke: #FD9222;
     border-color: #FD9222;
 }
 
-/* Перевертання картки */
+.card-front {
+    padding: 32px 50px 28px 50px;
 
-
-.taste-item {
-    perspective: 1000px;
-    /* Для 3D-ефекту */
 }
 
-.taste-card {
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    /* Сховати зворотний бік при перевороті */
-    transition: transform 0.6s ease;
-    /* Плавність перевороту */
+.card-back {
+    padding: 28px;
+    width: 335px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
-.taste-item.flipped .taste-card {
-    transform: rotateY(0deg);
+.taste-card-title {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 8px;
 }
 
-.taste-img,
-.taste-subtitle {
-    backface-visibility: hidden;
-    transition: transform 0.6s ease;
+.taste-card-btn {
+    border-radius: 35px;
+    padding: 6px 16px;
+    background: orange;
+    border: transparent;
+    font-size: 10px;
+    line-height: 120%;
+    color: #fff;
 }
 
-.taste-item.flipped .taste-img,
-.taste-item.flipped .taste-subtitle {
-    transform: rotateY(-180deg);
+.taste-card-button {
+    border: 1px solid orange;
+    border-radius: 35px;
+    padding: 6px 16px;
+    font-size: 10px;
+    line-height: 120%;
+    background: transparent;
 }
 
+.taste-card-text {
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #111;
+    margin-top: 14px;
+}
 
 
 /** -----------------------------TASTE----------------------- */
@@ -1443,9 +1469,9 @@ ol {
     .taste-button {
         background-color: transparent;
         border: none;
-        position: relative;
-        left: 190px;
-        top: -14px;
+        position: absolute;
+        left: 210px;
+
     }
 
     /**! -----------------------------TASTE----------------------- */
