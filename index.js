@@ -73,7 +73,7 @@ cards.forEach((card) => {
 
   flipBtn.forEach((button) => {
     button.addEventListener("click", (event) => {
-      event.preventDefault();
+      // event.preventDefault();
       cardFrontTestEl.classList.toggle("visually-hidden");
       cardBackTestEl.classList.toggle("visually-hidden");
       cardBackButtonEl.classList.toggle("taste-back-svg");
