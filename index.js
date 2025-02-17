@@ -73,13 +73,14 @@ cards.forEach((card) => {
 
   flipBtn.forEach((button) => {
     button.addEventListener("click", (event) => {
-      // event.preventDefault();
-      cardFrontTestEl.classList.toggle("visually-hidden");
-      cardBackTestEl.classList.toggle("visually-hidden");
-      cardBackButtonEl.classList.toggle("taste-back-svg");
+      const cardFront = card.querySelector(".card-front");
+      const cardBack = card.querySelector(".card-back");
+      const cardBackButton = card.querySelector(".taste-button-svg");
 
-      // Перемикаємо клас для перевертання
-      // card.classList.toggle("flipped");
+      // Перемикаємо класи тільки в межах поточної картки
+      cardFront.classList.toggle("visually-hidden");
+      cardBack.classList.toggle("visually-hidden");
+      cardBackButton.classList.toggle("taste-back-svg");
     });
   });
 });
